@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+.img {
+    position: absolute;
+	top:-60px;
+    left:-100px;
+
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: green;
+}
+
+.dropdown {
+    position: absolute;
+	top:30px;
+    left:850px;
+
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+   
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+	  background-color: #f9f9f9;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+</style>
+
+<link rel="icon" href="favicon.ico">
+
+	<title>Country Styles</title>
+	<meta charset="utf-8">
+	<meta name="author" content="pixelhint.com">
+	<meta name="description" content="La casa free real state fully responsive html5/css3 home page website template"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+	
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body background-image="cont.jpg">
+
+
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+
+
+	
+				<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">HOME</button>
+  <div id="myDropdown" class="dropdown-content">
+    
+    <a href="Categories.html">Categories</a>
+	<a href="#contact">Queries</a>
+	<a href="#about">Contact Us</a>
+	<a href="#contact">Services</a>
+  </div>
+</div>
+					<a href="#" class="login_btn">Login</a>
+				</nav>
+			</div>
+		</header><!--  end header section  -->
+
+			<section class="caption">
+				<h2 class="caption" style="color:blue;" >Find Your Formals</h2>
+				<h3 class="properties"></h3>
+			</section>
+	</section><!--  end hero section  -->
+
+
+	
+		
+
+		
+
+	
+	<footer>
+		<div class="wrapper footer">
+			<ul>
+				<li class="links">
+					<ul>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">UpComing Deals</a></li>
+					</ul>
+				</li>
+
+				<li class="links">
+					<ul>
+						<li><a href="Categories.html">Formal Shirts</a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+					</ul>
+				</li>
+
+
+				<li class="about">
+					<p>Country Styles</p>
+					<ul>
+						<li><a href="http://facebook.com/pixelhint" class="facebook" target="_blank"></a></li>
+						<li><a href="http://twitter.com/pixelhint" class="twitter" target="_blank"></a></li>
+						<li><a href="http://plus.google.com/+Pixelhint" class="google" target="_blank"></a></li>
+						<li><a href="#" class="skype"></a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+
+		<div class="copyrights wrapper">
+		
+			<center><h6>INDIA</h6></center>Copyright © 2018 <a href="" target="_blank" class="ph_link" title="Download more free Templates">Country Styles.com</a>. All Rights Reserved.
+		</div>
+	</footer><!--  end footer  -->
+	
+</body>
+</html>
+</html>

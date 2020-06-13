@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+.img {
+    position: absolute;
+	top:-60px;
+    left:-100px;
+
+    display: inline-block;
+}
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: green;
+}
+
+.dropdown {
+    position: absolute;
+	top:30px;
+    left:850px;
+
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+   
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+	  background-color: #f9f9f9;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+</style>
+	<title>Country Styles</title>
+	<meta charset="utf-8">
+	
+	
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+
+<header>
+	<p>Date/Time: <span id="datetime"></span></p>
+			<div class="wrapper">
+				<a href="index.html"><img src="" class="logo" alt="" titl=""/></a>
+				<a href="#" class="hamburger"></a>
+				<nav>
+					<div class="img"><a href="sample.html"><img src="img/logo.png" class="logo" alt="" titl=""/></a></div>
+					<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">MENU</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="index.html">Home</a>
+    <a href="Categories.html">Categories</a>
+	<a href="upcoming.html">Deals</a>
+	<a href="testContact.html">Contact Us</a>
+	<a href="testAbout.html">About</a>
+  </div>
+</div>
+					<a href="logintest.html" class="login_btn">Login</a>
+				</nav>
+			</div>
+		</header>
+
+<section class="listings">
+		<div class="wrapper">
+			<ul class="properties_list">
+				<li>
+					<a href="#">
+						<img src="img/property_1.jpg" alt="" title="" class="property_img"/>
+					</a>
+					<span class="price">15% off</span>
+					<div class="property_details">
+						<h1>
+							<a href="#">Olive Green </a>
+						</h1>
+						<h2> <span class="property_size">CAD::80</span></h2>
+					</div>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/property_2.jpg" alt="" title="" class="property_img"/>
+					</a>
+					<span class="price">15% off</span>
+					<div class="property_details">
+						<h1>
+							<a href="#">Light Blue</a>
+						</h1>
+						<h2><span class="property_size">CAD::60</span></h2>
+					</div>
+				</li>
+				
+				<li>
+					<a href="#">
+						<img src="img/property_4.jpg" alt="" title="" class="property_img"/>
+					</a>
+					<span class="price">15% off</span>
+					<div class="property_details">
+						<h1>
+							<a href="#">Black</a>
+						</h1>
+						<h2><span class="property_size">CAD::80</span></h2>
+					</div>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/property_5.jpg" alt="" title="" class="property_img"/>
+					</a>
+					<span class="price">15% off</span>
+					<div class="property_details">
+						<h1>
+							<a href="#">Maroon</a>
+						</h1>
+						<h2><span class="property_size">CAD::50</span></h2>
+					</div>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/property_8.jpg" alt="" title="" class="property_img"/>
+					</a>
+					<span class="price">15% off</span>
+					<div class="property_details">
+						<h1>
+							<a href="#">Blue</a>
+						</h1>
+						<h2><span class="property_size">CAD::65</span></h2>
+					</div>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/property_12.jpg" alt="" title="" class="property_img"/>
+					</a>
+					<span class="price">1499</span>
+					<div class="property_details">
+						<h1>
+							<a href="#">Light Blue</a>
+						</h1>
+						<h2> <span class="property_size">CAD::45</span></h2>
+					</div>
+				</li>
+				
+				<li>
+					<a href="#">
+						<img src="img/property_11.jpg" alt="" title="" class="property_img"/>
+					</a>
+					<span class="price">1499</span>
+					<div class="property_details">
+						<h1>
+							<a href="#">Grey</a>
+						</h1>
+						<h2><span class="property_size">CAD::60</span></h2>
+					</div>
+				</li>
+			</ul>
+			<div class="more_listing">
+				<a href="#" class="more_listing_btn">Back to Top</a>
+				
+			</div>
+		</div>
+	</section>	<!--  end listing section  -->
+
+	 <footer>
+        <div class="wrapper footer">
+            <ul>
+                <li class="links">
+                    <ul>
+                        <li><a href="testAbout.html">About</a></li>
+                        <li><a href="Student.html">Student Offer</a></li>
+                        <li><a href="testContact.html">Contact</a></li>
+                        <li><a href="upcoming.html">UpComing Deals</a></li>
+                    </ul>
+                </li>
+
+                <li class="links">
+                    <ul>
+                        <li><a href="Categories.html">Formal Shirts</a></li>
+                        
+                    </ul>
+                </li>
+
+                <li class="links">
+                    <ul>
+                        <li><a href="#">CANADA</a></li>
+                    </ul>
+                </li>
+
+                <li class="about">
+                    <p>Country Styles</p>
+                    <ul>
+                        <li><a href="https://www.facebook.com/suryateja.pasumarthi" class="facebook" target="_blank"></a></li>
+                        <li><a href="http://twitter.com/Suryateja@pasumarthi111" class="twitter" target="_blank"></a></li>
+                        <li><a href="http://plus.google.com/" class="google" target="_blank"></a></li>
+                        
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="copyrights wrapper">
+            Copyright © 2020 <a href="" target="_blank" class="ph_link" >CountryStyles</a>
+        </div>
+    </footer><!--  end footer  -->
+	</body>
+</html>
